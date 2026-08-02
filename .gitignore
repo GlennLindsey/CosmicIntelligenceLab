@@ -1,35 +1,54 @@
+# -------------------------
 # Python
+# -------------------------
 __pycache__/
-*.pyc
+*.py[cod]
 
+# -------------------------
 # Jupyter
-.ipynb_checkpoints/
+# -------------------------
+**/.ipynb_checkpoints/
 
-# Conda
+# -------------------------
+# Conda / Virtual Environments
+# -------------------------
 .env
 .conda
+.venv/
+venv/
 
-# Large data
-data/raw/*
-data/cache/*
+# -------------------------
+# Raw & Cache Data
+# -------------------------
+data/raw/
+data/cache/
+
 !data/raw/.gitkeep
 !data/cache/.gitkeep
 
-# Models
-models/*
-
-# Results
-results/*
-
-# VS Code
-.vscode/
-
-# Mac/Linux
-.DS_Store
-
-# Large astronomical FITS files
+# -------------------------
+# Large FITS Files
+# -------------------------
 *.fits
 *.fits.gz
 
-# Raw telescope downloads
-data/raw/
+# -------------------------
+# AI Models
+# -------------------------
+models/
+
+# -------------------------
+# Generated Results
+# -------------------------
+results/
+
+# -------------------------
+# Editor Settings
+# -------------------------
+.vscode/
+
+# -------------------------
+# Operating System Files
+# -------------------------
+.DS_Store
+Thumbs.db
