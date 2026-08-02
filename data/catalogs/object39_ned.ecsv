@@ -1,0 +1,192 @@
+# %ECSV 1.0
+# ---
+# datatype:
+# - name: No.
+#   datatype: int32
+#   description: A sequential object number applicable to this list only.
+#   meta: !!omap
+#   - {ucd: meta.number}
+#   - {width: 4}
+# - name: Object Name
+#   datatype: string
+#   description: NED preferred name for the object
+#   meta: !!omap
+#   - {ucd: meta.id;meta.main}
+#   - {width: 30}
+#   - {_votable_string_dtype: char}
+# - name: RA
+#   unit: degrees
+#   datatype: float64
+#   format: '{!s:>10}'
+#   description: Right Ascension in degrees (Equatorial J2000.0)
+#   meta: !!omap
+#   - {ucd: pos.eq.ra;meta.main}
+#   - {width: 10}
+# - name: DEC
+#   unit: degrees
+#   datatype: float64
+#   format: '{!s:>10}'
+#   description: Declination in degrees (Equatorial J2000.0)
+#   meta: !!omap
+#   - {ucd: pos.eq.dec;meta.main}
+#   - {width: 10}
+# - name: Type
+#   datatype: string
+#   description: 'NED''s Preferred Object Type: G,GPair,GTrpl,GGroup,GClstr,QSO,AbLS,RadioS,IrS,EmLS,UvES,XrayS,SN'
+#   meta: !!omap
+#   - {ucd: src.class}
+#   - {width: 10}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: Velocity
+#   unit: km / s
+#   datatype: float64
+#   format: '{!s:>10}'
+#   description: Velocity in km/sec, based on known heliocentric redshift
+#   meta: !!omap
+#   - {ucd: src.veloc.hc}
+#   - {width: 10}
+# - name: Redshift
+#   datatype: float64
+#   format: '{!s:>10}'
+#   description: Heliocentric redshift for the object, if it exists in NED
+#   meta: !!omap
+#   - {ucd: src.redshift}
+#   - {width: 10}
+# - name: Redshift Flag
+#   datatype: string
+#   description: Quality flag for known heliocentric redshift
+#   meta: !!omap
+#   - {ucd: meta.code;src.redshift}
+#   - {width: 5}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: Magnitude and Filter
+#   datatype: string
+#   description: NED's Basic Data magnitude and filter, generally in an optical band.
+#   meta: !!omap
+#   - {ucd: meta.code;src.magnitude}
+#   - {width: 5}
+#   - {_votable_string_dtype: char}
+#   - {_votable_arraysize: '*'}
+#   subtype: json
+# - name: Separation
+#   unit: arcmin
+#   datatype: float64
+#   format: '{!s:>10}'
+#   description: Angular separation of the object coordinates and the search coordinate.
+#   meta: !!omap
+#   - {ucd: pos.distance}
+#   - {width: 10}
+# - name: References
+#   datatype: int32
+#   description: Number of literature references in NED
+#   meta: !!omap
+#   - {ucd: meta.bib;meta.number}
+#   - {width: 5}
+# - name: Notes
+#   datatype: int32
+#   description: Number of catalog notes in NED
+#   meta: !!omap
+#   - {ucd: meta.note;meta.number}
+#   - {width: 5}
+# - name: Photometry Points
+#   datatype: int32
+#   description: Number of photometric data points stored by NED for the object
+#   meta: !!omap
+#   - {ucd: phot;meta.number}
+#   - {width: 5}
+# - name: Positions
+#   datatype: int32
+#   description: Number of position data points stored by NED for the object
+#   meta: !!omap
+#   - {ucd: pos;meta.number}
+#   - {width: 5}
+# - name: Redshift Points
+#   datatype: int32
+#   description: Number of redshift data points stored by NED for the object.
+#   meta: !!omap
+#   - {ucd: src.redshift;meta.number}
+#   - {width: 5}
+# - name: Diameter Points
+#   datatype: int32
+#   description: Number of diameter data points stored by NED for the object.
+#   meta: !!omap
+#   - {ucd: phys.size.diameter;meta.number}
+#   - {width: 5}
+# - name: Associations
+#   datatype: int32
+#   description: Number of NED associations for the object.
+#   meta: !!omap
+#   - {ucd: meta.id.assoc;meta.number}
+#   - {width: 5}
+# - {name: Einstein Separation (arcsec), datatype: float64}
+# meta: !!omap
+# - {ID: NED_MainTable}
+# - {name: 'Main Information Table for Searching NED within 0.083 arcmin of 53.160807, -27.775440'}
+# - {description: Main information about object (Cone Search results)}
+# schema: astropy-2.0
+No. "Object Name" RA DEC Type Velocity Redshift "Redshift Flag" "Magnitude and Filter" Separation References Notes "Photometry Points" Positions "Redshift Points" "Diameter Points" Associations "Einstein Separation (arcsec)"
+1 "SSTSL2 J033238.24-274629.6" 53.15937 -27.77489 """IrS""" "" "" """""" """""" 0.083 0 0 8 1 0 0 0 4.972364063141754
+2 "CANDELS J033238.24-274630.1" 53.15937 -27.77509 """G""" 364502.0 1.215849 """SLS""" """25.4R""" 0.079 31 0 111 18 25 0 0 4.73334329341804
+3 "UDF:[JBM2015] 28722" 53.1594 -27.7757 """VisS""" 355914.0 1.1872 """PUN""" """""" 0.076 1 0 3 1 1 0 0 4.568280060466781
+4 "CANDELS J033238.30-274628.4" 53.1596 -27.77464 """G""" 506649.0 1.69 """SLS""" """26.6B""" 0.08 18 0 41 9 12 0 0 4.788551380855599
+5 "UDF:[CBS2006] 58834" 53.15971 -27.77598 """VisS""" 387032.0 1.291 """PUN""" """31.2V""" 0.067 2 0 6 2 2 0 0 3.9923562305856937
+6 "UDF:[CBS2006] 57919" 53.1598 -27.77606 """VisS""" 390630.0 1.303 """PUN""" """29.7V""" 0.065 1 0 6 1 1 0 0 3.9028925938121564
+7 "[XWB2012] 13405" 53.15993 -27.77504 """IrS""" 91437.0 0.305 """PUN""" """""" 0.052 1 0 0 1 2 0 0 3.1278516847053903
+8 "CANDELS J033238.40-274629.3" 53.15995 -27.77482 """G""" 358185.0 1.194775 """SLS""" """25.4R""" 0.059 15 0 73 7 12 0 0 3.5109997985248267
+9 "UDF10 0082" 53.16 -27.7748 """G""" 345938.0 1.153926 """SLS""" """""" 0.058 2 0 3 2 2 0 0 3.436882236311253
+10 "CANDELS J033238.41-274634.8" 53.16004 -27.77641 """G""" 762299.0 2.542757 """SLS""" """24.1R""" 0.071 29 0 83 13 24 0 0 4.262214138958267
+11 "UDF:[JBM2015] 28364" 53.16007 -27.7761 """VisS""" 304110.0 1.0144 """PUN""" """""" 0.056 1 0 2 1 1 0 0 3.3379995995035388
+12 "ACS-GC 90042794" 53.16012 -27.77554 """G""" 186693.0 0.62274 """SLS""" """23.0R""" 0.037 39 0 125 17 24 0 0 2.207185127497487
+13 "UDF:[JBM2015] 28412" 53.16013 -27.77603 """VisS""" 311904.0 1.0404 """PUN""" """""" 0.05 1 0 2 1 1 0 0 3.024498488283258
+14 "SSTSL2 J033238.44-274635.2" 53.16018 -27.77647 """IrS""" "" "" """""" """""" 0.07 0 0 8 1 0 0 0 4.213831465764741
+15 "[CVU2010] 45547" 53.16022 -27.77627 """G""" "" "" """""" """""" 0.059 1 0 0 1 0 0 0 3.5260052736602123
+16 "UDF:[CBS2006] 58665" 53.16031 -27.77415 """VisS""" 474871.0 1.584 """PUN""" """31.9V""" 0.082 1 0 6 1 1 0 0 4.8939755789022295
+17 "SSTSL2 J033238.49-274631.9" 53.16038 -27.77553 """G""" 764471.0 2.55 """SPA""" """""" 0.024 2 0 10 3 3 0 0 1.388490681358657
+18 "UDF:[JBM2015] 27883" 53.1604 -27.77677 """VisS""" 1536928.0 5.126639 """SLS""" """""" 0.083 3 0 2 3 3 0 0 4.965944242214232
+19 "GOODS-CDFS-MUSIC 11099" 53.16043 -27.77522 """G""" 249742.0 0.833048 """SLS""" """26.1V""" 0.024 11 0 20 5 9 0 0 1.423411159514202
+20 "PEARS 089030:[SMP2008] KNOT 01" 53.16043 -27.77524 """PofG""" 422707.0 1.41 """UUN""" """21.7i""" 0.023 3 0 3 1 1 0 0 1.3851109472697753
+21 "2CXO J033238.5-274635" 53.16044 -27.77641 """XrayS""" "" "" """""" """""" 0.061 1 0 19 2 0 0 0 3.687188754649306
+22 "UDF:[CBS2006] 58234" 53.16046 -27.77668 """VisS""" 396625.0 1.323 """PUN""" """31.4V""" 0.077 2 0 6 2 2 0 0 4.604646527880088
+23 "UDF:[CBS2006] 08575" 53.1605 -27.77662 """VisS""" 110354.0 0.3681 """PUN""" """29.5V""" 0.073 4 0 8 3 3 0 0 4.365176898033902
+24 "UDF:[CBS2006] 58672" 53.1605 -27.7744 """VisS""" 370783.0 1.2368 """PUN""" """30.6V""" 0.065 3 0 8 3 3 0 0 3.8578262982436833
+25 "UDF:[CBS2006] 58713" 53.1605 -27.77455 """VisS""" 497356.0 1.659 """PUN""" """31.0V""" 0.056 2 0 6 2 2 0 0 3.3377585238791943
+26 "CANDELS J033238.52-274627.4" 53.16052 -27.77429 """VisS""" 290139.0 0.9678 """PUN""" """30.4V""" 0.071 6 0 15 4 3 0 0 4.228329119981838
+27 "SSTSL2 J033238.52-274634.9" 53.16052 -27.77637 """IrS""" 788454.0 2.63 """PUN""" """""" 0.058 2 0 13 3 2 0 0 3.47608563718471
+28 "UDF:[JBM2015] 28222" 53.16053 -27.77647 """VisS""" 382175.0 1.2748 """PUN""" """""" 0.063 1 0 1 1 1 0 0 3.8175081520215355
+29 "ASPECS 1 mm.02" 53.16058 -27.77619 """RadioS""" 765663.0 2.553975 """SLS""" """""" 0.046 3 0 0 2 1 0 0 2.800738867706225
+30 "ASPECS 1 mm.01" 53.16058 -27.77628 """RadioS""" 762372.0 2.543 """SUN""" """""" 0.052 5 0 0 4 2 0 0 3.115212912199643
+31 "[CVU2010] 46037" 53.1606 -27.77542 """G""" "" "" """""" """""" 0.011 1 0 0 1 0 0 0 0.6502780101321016
+32 "UDF:[CBS2006] 08578" 53.16061 -27.77666 """VisS""" 1816743.0 6.06 """PUN""" """29.2V""" 0.074 4 0 13 3 3 0 0 4.44382173842239
+33 "ASPECS 3 mm.01" 53.16062 -27.77627 """G""" 762430.0 2.543191 """SUN""" """24.4R""" 0.051 56 0 120 37 43 0 0 3.0532850540614107
+34 "ASPECS-LP.1 mm.Faint.C17" 53.16067 -27.77528 """SmmS""" "" "" """""" """""" 0.012 1 0 0 1 0 0 0 0.7081466334602817
+35 "UDF:[BSK2006] 08667" 53.16071 -27.77654 """VisS""" 1030741.0 3.43818 """S1L""" """28.7V""" 0.066 6 0 19 4 4 0 0 3.9800939532875135
+36 "WISEA J033238.57-274632.0" 53.16072 -27.77557 """IrS""" "" "" """""" """""" 0.009 0 0 12 1 0 0 0 0.5456733533085534
+37 "HRG14 J033238.58-274629.3" 53.16076 -27.7748 """VisS""" 234348.0 0.7817 """PUN""" """29.0V""" 0.039 7 0 18 5 5 0 0 2.299111710472396
+38 "EIS J033238.61-274631.6" 53.1608 -27.7754 """G""" 186394.0 0.621743 """SLS""" """21.9R""" 0.003 47 2 110 22 29 0 0 0.13537432927103826
+39 "UDF:[JBM2015] 28103" 53.1608 -27.77661 """VisS""" 365387.0 1.2188 """PUN""" """""" 0.07 1 0 3 1 1 0 0 4.22102106856485
+40 "UDF:[CBS2006] 58847" 53.16087 -27.77667 """VisS""" 392129.0 1.308 """PUN""" """31.8V""" 0.074 2 0 6 2 2 0 0 4.44210816219638
+41 "SMM J033238-274634" 53.16087 -27.77636 """IrS""" "" "" """""" """""" 0.055 1 0 0 1 0 0 0 3.327818717304228
+42 "UDF:[JBM2015] 28050" 53.16092 -27.7766 """VisS""" 367965.0 1.2274 """PUN""" """""" 0.07 1 0 2 1 1 0 0 4.201513612291982
+43 "UDF:[CBS2006] 58235" 53.16104 -27.77668 """VisS""" 345601.0 1.1528 """PUN""" """31.1V""" 0.076 3 0 11 3 3 0 0 4.53615795117255
+44 "UDF:[JBM2015] 29203" 53.16117 -27.77484 """VisS""" 367995.0 1.2275 """PUN""" """""" 0.041 1 0 1 1 1 0 0 2.447818079311686
+45 "[HSM2024] ALMA-HUDF 41" 53.16121 -27.77522 """G""" "" "" """""" """""" 0.025 1 0 0 1 0 0 0 1.51395825592949
+46 "UDF:[JBM2015] 28189" 53.16136 -27.77649 """VisS""" 309086.0 1.031 """PUN""" """""" 0.07 1 0 4 1 1 0 0 4.18353955164795
+47 "HRG14 J033238.74-274627.9" 53.16139 -27.77439 """VisS""" 332860.0 1.1103 """PUN""" """29.7V""" 0.07 6 0 14 5 4 0 0 4.208792139510669
+48 "UDF:[JBM2015] 28314" 53.16141 -27.77625 """VisS""" 367306.0 1.2252 """PUN""" """""" 0.058 1 0 3 1 1 0 0 3.5059048051853074
+49 "UDF:[JBM2015] 28038" 53.16151 -27.77661 """VisS""" 365567.0 1.2194 """PUN""" """""" 0.079 1 0 3 1 1 0 0 4.78385954115013
+50 "UDF:[CBS2006] 08364" 53.16154 -27.77485 """VisS""" 190368.0 0.635 """PUN""" """29.4V""" 0.053 2 0 6 2 2 0 0 3.1592809572156506
+51 "CANDELS J033238.77-274626.9" 53.16157 -27.77423 """VisS""" 364668.0 1.2164 """PUN""" """28.0B""" 0.083 9 0 34 6 5 0 0 4.986169528028748
+52 "UDF:[JBM2015] 28676" 53.16165 -27.77566 """VisS""" 367935.0 1.2273 """PUN""" """""" 0.047 1 0 1 1 1 0 0 2.8136749878433087
+53 "UDF:[JBM2015] 28097" 53.16165 -27.77658 """VisS""" 309086.0 1.031 """PUN""" """""" 0.082 1 0 5 1 1 0 0 4.918529423650413
+54 "UDF:[JBM2015] 28771" 53.16167 -27.77579 """VisS""" 369704.0 1.2332 """PUN""" """""" 0.05 1 0 3 1 1 0 0 3.0386240653030177
+55 "UDF12 3881-6343" 53.16169 -27.77622 """G""" 1805950.0 6.024 """SUN""" """""" 0.066 6 0 16 7 5 0 0 3.9892588375217675
+56 "UDF:[JBM2015] 28789" 53.16177 -27.77542 """VisS""" 367995.0 1.2275 """PUN""" """""" 0.051 1 0 0 1 1 0 0 3.0801214453317067
+57 "HRG14 J033238.83-274628.2" 53.16177 -27.77448 """VisS""" 1113660.0 3.71477 """S1L""" """28.4V""" 0.077 12 0 18 11 10 0 0 4.622230036681572
+58 "UDF:[JBM2015] 28554" 53.16179 -27.77591 """VisS""" 746955.0 2.491575 """SLS""" """""" 0.059 2 0 4 2 2 0 0 3.5739300933397704
+59 "UDF:[JBM2015] 28600" 53.16186 -27.77584 """VisS""" 936003.0 3.122171 """SLS""" """""" 0.061 2 0 3 2 2 0 0 3.664767866453424
+60 "UDF:[CBS2006] 58934" 53.16201 -27.77596 """VisS""" 575122.0 1.9184 """PUN""" """30.5V""" 0.071 3 0 11 3 3 0 0 4.2794746125174745
+61 "GALEXMSC J033238.88-274628.7" 53.16203 -27.77467 """UvS""" "" "" """""" """""" 0.08 0 0 4 1 0 0 0 4.785793036767719

@@ -26,3 +26,10 @@ results/*
 
 # Mac/Linux
 .DS_Store
+
+# Large astronomical FITS files
+*.fits
+*.fits.gz
+
+# Raw telescope downloads
+data/raw/

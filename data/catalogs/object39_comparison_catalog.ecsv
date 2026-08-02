@@ -1,0 +1,68 @@
+# %ECSV 1.0
+# ---
+# datatype:
+# - name: Seq
+#   datatype: int32
+#   description: Identification number
+#   meta: !!omap
+#   - {ucd: meta.id;meta.main}
+# - name: RAJ2000
+#   unit: deg
+#   datatype: float64
+#   description: Right ascension, in decimal degrees (J2000)
+#   meta: !!omap
+#   - {ucd: pos.eq.ra;meta.main}
+# - name: DEJ2000
+#   unit: deg
+#   datatype: float64
+#   description: Declination, in decimal degrees (J2000)
+#   meta: !!omap
+#   - {ucd: pos.eq.dec;meta.main}
+# - {name: best_z, datatype: float64}
+# - name: zspec
+#   datatype: float64
+#   description: '? Spectroscopic Redshift'
+#   meta: !!omap
+#   - {ucd: src.redshift}
+# - name: zphot
+#   datatype: float64
+#   description: '? Photometric redshift'
+#   meta: !!omap
+#   - {ucd: src.redshift}
+# - {name: sep_arcsec, datatype: float64}
+# - name: AGN
+#   datatype: int16
+#   description: AGN flag (6)
+#   meta: !!omap
+#   - {ucd: src.class.starGalaxy}
+# - name: Ksmag
+#   unit: mag
+#   datatype: float64
+#   description: '? Ks magnitude, in AB photometric system'
+#   meta: !!omap
+#   - {ucd: phot.mag;em.IR.K}
+# - name: IR36mag
+#   unit: mag
+#   datatype: float64
+#   description: '? IRAC 3.6{mu}m magnitude, in AB photometric system'
+#   meta: !!omap
+#   - {ucd: phot.mag;em.IR.3-4um}
+# - name: IR45mag
+#   unit: mag
+#   datatype: float64
+#   description: '? IRAC 4.5{mu}m magnitude, in AB photometric system'
+#   meta: !!omap
+#   - {ucd: phot.mag;em.IR.4-8um}
+# meta: !!omap
+# - {ID: result_1785199707094}
+# - {name: result_1785199707094}
+# schema: astropy-2.0
+Seq RAJ2000 DEJ2000 best_z zspec zphot sep_arcsec AGN Ksmag IR36mag IR45mag
+10989 53.160816 -27.775379 0.64 "" 0.64 0.2145043835039095 0 20.489 20.838 21.232
+10645 53.161629 -27.780247 0.619 0.619 0.62 17.51286173275635 0 19.964 20.638 21.002
+10646 53.158283 -27.780985 0.59 "" 0.59 21.523854534081554 0 23.842 24.184 24.771
+10587 53.158138 -27.781094 0.64 "" 0.64 22.061988696899594 0 21.563 22.083 22.362
+11316 53.168579 -27.772926 0.61 "" 0.61 26.366529365011314 0 25.055 26.199 26.016
+11688 53.158356 -27.768261 0.63 "" 0.63 26.98575314963197 0 26.093 25.279 25.962
+11309 53.151211 -27.772839 0.6 "" 0.6 31.95350715576038 0 23.652 24.066 24.096
+11209 53.16993 -27.77103 0.67 "" 0.67 33.119586168819694 0 19.292 19.5 19.952

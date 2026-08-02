@@ -21,7 +21,7 @@
 # - {name: kron_flux, datatype: float64}
 # - {name: kron_flux_err, datatype: float64}
 # meta: !!omap
-# - {date: '2026-07-14 09:23:35 PDT'}
+# - {date: '2026-07-27 15:48:05 PDT'}
 # - version: {Python: 3.12.13, astropy: 8.0.0, bottleneck: 1.6.0, gwcs: 1.0.3, matplotlib: 3.11.0, numpy: 2.5.0, photutils: 3.0.0, scipy: 1.17.1,
 #     skimage: 0.26.0}
 # - {local_bkg_width: 0}
