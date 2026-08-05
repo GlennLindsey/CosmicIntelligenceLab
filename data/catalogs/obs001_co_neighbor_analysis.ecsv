@@ -10,25 +10,24 @@
 # - {name: sep_arcsec, datatype: float64}
 # - {name: delta_z, datatype: float64}
 # - {name: likely_companion, datatype: bool}
-# - {name: classification, datatype: string}
 # - {name: association_status, datatype: string}
 # schema: astropy-2.0
-id ra dec z jup snr sep_arcsec delta_z likely_companion classification association_status
-12 03:32:36.21 −27:46:27.78 2.574 3 7.0 0.3447559525144278 0.0 True "Immediate Companion" "Target (C19)"
-15 03:32:36.48 −27:46:31.92 1.096 2 6.5 5.493610615819969 1.4779999999999998 False Background/Foreground "Different Redshift"
-8 03:32:35.58 −27:46:26.16 1.382 2 9.5 8.302300006107911 1.192 False Background/Foreground "Different Redshift"
-MP02 03:32:35.48 −27:46:26.50 1.087 2 4.0 9.541661517826702 1.4869999999999999 False Background/Foreground "Different Redshift"
-14 03:32:34.84 −27:46:40.74 1.098 2 6.7 21.984430049035257 1.4759999999999998 False Background/Foreground "Different Redshift"
-1 03:32:38.54 -27:46:34.62 2.543 3 37.7 31.883377582290304 0.030999999999999694 True "Same Structure" "Candidate Same-Redshift Source"
-MP01 03:32:37.30 −27:45:57.80 1.096 2 4.5 33.60179696832994 1.4779999999999998 False Background/Foreground "Different Redshift"
-13 03:32:35.56 −27:47:04.32 3.601 4 6.8 37.26991419671708 1.0270000000000001 False Background/Foreground "Different Redshift"
-4 03:32:34.44 −27:46:59.82 1.414 2 15.5 39.39418890701477 1.16 False Background/Foreground "Different Redshift"
-5 03:32:39.76 −27:46:11.58 1.55 2 15.0 50.14595879660592 1.0239999999999998 False Background/Foreground "Different Redshift"
-16 03:32:39.92 −27:46:07.44 1.294 2 6.4 53.60487162965007 1.2799999999999998 False Background/Foreground "Different Redshift"
-11 03:32:39.80 −27:46:53.70 1.096 2 7.9 54.367581148901934 1.4779999999999998 False Background/Foreground "Different Redshift"
-3 03:32:41.02 −27:46:31.56 2.453 3 15.8 64.20144285270246 0.121 False Background/Foreground "Different Redshift"
-6 03:32:39.90 −27:47:15.12 1.095 2 11.9 68.15007568887926 1.4789999999999999 False Background/Foreground "Different Redshift"
-2 03:32:42.38 -27:47:07.92 1.317 2 17.9 91.33442007741846 1.257 False Background/Foreground "Different Redshift"
-10 03:32:42.98 −27:46:50.45 1.037 2 8.7 92.86756907656991 1.537 False Background/Foreground "Different Redshift"
-7 03:32:43.53 −27:46:39.47 2.697 3 10.9 98.08677574844512 0.12300000000000022 False Background/Foreground "Different Redshift"
-9 03:32:44.03 −27:46:36.05 2.698 3 9.3 104.36104185548199 0.12400000000000011 False Background/Foreground "Different Redshift"
+id ra dec z jup snr sep_arcsec delta_z likely_companion association_status
+12 03:32:36.21 -27:46:27.78 2.574 3 7.0 0.3447559525144278 0.0 True "Target (C19)"
+15 03:32:36.48 -27:46:31.92 1.096 2 6.5 5.493610615819969 1.4779999999999998 False "Different Redshift"
+8 03:32:35.58 -27:46:26.16 1.382 2 9.5 8.302300006107911 1.192 False "Different Redshift"
+MP02 03:32:35.48 -27:46:26.50 1.087 2 4.0 9.541661517826702 1.4869999999999999 False "Different Redshift"
+14 03:32:34.84 -27:46:40.74 1.098 2 6.7 21.984430049035257 1.4759999999999998 False "Different Redshift"
+1 03:32:38.54 -27:46:34.62 2.543 3 37.7 31.883377582290304 0.030999999999999694 True "Candidate Same-Redshift Source"
+MP01 03:32:37.30 -27:45:57.80 1.096 2 4.5 33.60179696832994 1.4779999999999998 False "Different Redshift"
+13 03:32:35.56 -27:47:04.32 3.601 4 6.8 37.26991419671708 1.0270000000000001 False "Different Redshift"
+4 03:32:34.44 -27:46:59.82 1.414 2 15.5 39.39418890701477 1.16 False "Different Redshift"
+5 03:32:39.76 -27:46:11.58 1.55 2 15.0 50.14595879660592 1.0239999999999998 False "Different Redshift"
+16 03:32:39.92 -27:46:07.44 1.294 2 6.4 53.60487162965007 1.2799999999999998 False "Different Redshift"
+11 03:32:39.80 -27:46:53.70 1.096 2 7.9 54.367581148901934 1.4779999999999998 False "Different Redshift"
+3 03:32:41.02 -27:46:31.56 2.453 3 15.8 64.20144285270246 0.121 False "Different Redshift"
+6 03:32:39.90 -27:47:15.12 1.095 2 11.9 68.15007568887926 1.4789999999999999 False "Different Redshift"
+2 03:32:42.38 -27:47:07.92 1.317 2 17.9 91.33442007741846 1.257 False "Different Redshift"
+10 03:32:42.98 -27:46:50.45 1.037 2 8.7 92.86756907656991 1.537 False "Different Redshift"
+7 03:32:43.53 -27:46:39.47 2.697 3 10.9 98.08677574844512 0.12300000000000022 False "Different Redshift"
+9 03:32:44.03 -27:46:36.05 2.698 3 9.3 104.36104185548199 0.12400000000000011 False "Different Redshift"
