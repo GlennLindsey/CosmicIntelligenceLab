@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment and secrets
+.env
+.env.*
+*.key
+*_key.txt
+secrets/
+credentials/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local data
+data/raw/
+data/cache/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+
+# VS Code local settings
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
