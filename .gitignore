@@ -24,8 +24,7 @@ credentials/
 Thumbs.db
 
 # Local data
-data/raw/
-data/cache/
+data/
 
 # Logs
 *.log

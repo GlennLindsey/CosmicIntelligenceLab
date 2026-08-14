@@ -1,0 +1,226 @@
+                 ┌──────────────────────┐
+                 │  TRANSIENT ALERTS     │
+                 │  TNS / ZTF / ATLAS    │
+                 │  other surveys        │
+                 └──────────┬───────────┘
+                            │
+                     New candidate
+                            │
+                            ▼
+                 ┌──────────────────────┐
+                 │   INGEST + ARCHIVE   │
+                 │ raw alert/evidence   │
+                 └──────────┬───────────┘
+                            │
+                            ▼
+                 ┌──────────────────────┐
+                 │ IDENTIFICATION       │
+                 │ SIMBAD / coordinates │
+                 │ host galaxy           │
+                 └──────────┬───────────┘
+                            │
+                            ▼
+                 ┌──────────────────────┐
+                 │ ARCHIVE SEARCH       │
+                 │ MAST / JWST / HST    │
+                 │ other archives       │
+                 └──────────┬───────────┘
+                            │
+                            ▼
+                 ┌──────────────────────┐
+                 │ LITERATURE           │
+                 │ ADS / papers         │
+                 └──────────┬───────────┘
+                            │
+                            ▼
+                 ┌──────────────────────┐
+                 │ EVIDENCE STORE       │
+                 │ source + timestamp   │
+                 │ query + result       │
+                 └──────────┬───────────┘
+                            │
+                            ▼
+                 ┌──────────────────────┐
+                 │ JUPYTERLAB           │
+                 │ scientific analysis  │
+                 │ plots / statistics   │
+                 └──────────┬───────────┘
+                            │
+                            ▼
+                 ┌──────────────────────┐
+                 │ COSMIC AI / NEMOTRON │
+                 │ orchestration        │
+                 │ comparison            │
+                 │ hypothesis generation │
+                 └──────────┬───────────┘
+                            │
+                            ▼
+                 ┌──────────────────────┐
+                 │ HUMAN REVIEW          │
+                 │ Glenn + evidence      │
+                 └──────────┬───────────┘
+                            │
+                            ▼
+                 ┌──────────────────────┐
+                 │ RESEARCH JOURNAL      │
+                 │ conclusions + links  │
+                 │ reproducible results │
+                 └──────────────────────┘
+                 
+What each component should do
+1. Alert sources — find the supernova
+
+Eventually we'll monitor sources such as:
+
+Transient Name Server (TNS)
+ZTF
+ATLAS
+other transient surveys
+
+The system should capture the original alert, not just ask Nemotron to summarize it.
+
+2. Evidence store — preserve what actually happened
+
+For every event we investigate, we should retain something like:
+
+event/
+└── SN20XXabc/
+    ├── discovery.json
+    ├── simbad.json
+    ├── mast.json
+    ├── jwst.json
+    ├── literature.json
+    ├── analysis.ipynb
+    └── research.md
+
+Each evidence item should contain:
+
+source
+query
+retrieval time
+raw/structured result
+object/event identifier
+
+That means if we revisit a supernova six months later, we know exactly where every claim came from.
+
+3. JupyterLab — this becomes our scientific laboratory
+
+This is where I now think Jupyter becomes extremely important.
+
+Suppose Cosmic AI finds:
+
+"SN2026XYZ has archival JWST observations."
+
+We don't immediately accept that.
+
+Jupyter lets us investigate:
+
+Is the JWST observation actually of the host?
+       ↓
+What instrument?
+       ↓
+What filter?
+       ↓
+What date?
+       ↓
+Was the observation before or after the explosion?
+       ↓
+What was the target position?
+       ↓
+What other observations exist?
+       ↓
+Can we extract useful measurements?
+
+The notebook becomes part of the scientific record.
+
+4. VS Code — engineering
+
+VS Code remains where we build:
+
+agents/
+tools/
+evidence/
+tests/
+
+The rule I'd use is:
+
+Experiment in Jupyter. Productionize in Python.
+
+If we discover a useful procedure in a notebook, we turn it into a tested tool.
+
+5. Cosmic AI — orchestration
+
+This is where Nemotron becomes powerful.
+
+It shouldn't be responsible for deciding what is true.
+
+Instead:
+
+Cosmic AI:
+"I need the host galaxy."
+        ↓
+SIMBAD
+
+Cosmic AI:
+"I need archival observations."
+        ↓
+MAST
+
+Cosmic AI:
+"I need relevant papers."
+        ↓
+ADS
+
+Cosmic AI:
+"I need to compare the evidence."
+        ↓
+Jupyter / analysis tools
+
+The AI becomes the research coordinator.
+
+6. Human review — you remain in the loop
+
+This is especially important for astronomy.
+
+The AI can say:
+
+"This supernova appears interesting because..."
+
+But you and I should be able to trace that statement back to:
+
+TNS evidence
+   ↓
+MAST evidence
+   ↓
+literature
+   ↓
+analysis
+
+before we regard it as a research conclusion.
+
+7. Git — version the entire investigation
+
+This is where Git becomes more than software backup.
+
+We can eventually have:
+
+Git
+│
+├── agent code
+├── tools
+├── notebooks
+├── research notes
+└── analysis
+
+Every significant research milestone gets a commit.
+
+For example:
+
+Add TNS ingestion
+Add SN host identification
+Add JWST archive search
+Analyze SN2026XYZ
+Correct host identification
+Update evidence model
+
+That gives us a scientific audit trail.
