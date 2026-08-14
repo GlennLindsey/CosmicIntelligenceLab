@@ -37,3 +37,6 @@ data/
 .vscode/*
 !.vscode/settings.json
 !.vscode/extensions.json
+
+# Large JWST Level-3 science products
+data/m51_jwst_level3/
