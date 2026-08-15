@@ -352,3 +352,55 @@ In particular:
 No candidate should be identified as the physical origin of the M51
 feature until the broader spectral evidence supports the
 identification.
+
+### 7.6 Hydrogen Paschen-Series Hypothesis
+
+The feature inventory revealed three prominent spectral features whose
+wavelengths are broadly consistent with hydrogen Paschen-series
+transitions after accounting for the recession velocity of M51.
+
+Candidate transitions investigated:
+
+| Line | Rest wavelength (µm) | Predicted wavelength at 523 km/s (µm) | Observed wavelength (µm) | Velocity from observed wavelength (km/s) |
+|---|---:|---:|---:|---:|
+| Pa-γ | 1.093810 | 1.095718 | 1.095610 | 493.3 |
+| Pa-β | 1.281807 | 1.284043 | 1.284502 | 630.3 |
+| Pa-α | 1.875101 | 1.878372 | 1.878526 | 547.6 |
+
+The three inferred velocities are approximately 493, 630, and 548 km/s.
+They are broadly consistent with the velocity scale adopted for M51,
+although they are not identical.
+
+The observed features have the following approximate
+background-subtracted peak values:
+
+- **Pa-γ candidate:** 1.037 MJy/sr
+- **Pa-β candidate:** 3.837 MJy/sr
+- **Pa-α candidate:** 31.628 MJy/sr
+
+These values are peak surface-brightness excesses and should not be
+treated as line fluxes. A physically meaningful comparison of the
+candidate lines will require measurement of their line profiles and
+integrated fluxes.
+
+The wavelength agreement provides evidence supporting further
+investigation of a hydrogen recombination-line interpretation.
+However, the three features have not yet been formally identified as
+Pa-α, Pa-β, and Pa-γ.
+
+Possible effects requiring further investigation include:
+
+- wavelength calibration and instrumental resolution
+- line-profile shape and centroid
+- spectral blending
+- continuum/background treatment
+- integrated line flux rather than peak surface brightness
+- consistency of the inferred velocities
+- relative strengths of the candidate hydrogen lines
+
+**Current status:** The hydrogen Paschen-series interpretation is a
+promising hypothesis but remains **NOT ESTABLISHED**.
+
+The next step is to examine the individual line profiles and measure
+their centroids, widths, and integrated fluxes before assigning physical
+identifications.
