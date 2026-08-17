@@ -1,0 +1,100 @@
+# C19.yaml
+# Einstein Galaxy Dossier Metadata
+# Version 0.1
+#
+# This file contains machine-readable metadata for ASPECS C19.
+# Human-readable descriptions are maintained in C19.md.
+
+object:
+  id: C19
+  canonical_name: "ASPECS C19"
+  survey: "ASPECS"
+  sample: "Primary 1.2 mm continuum"
+  status: "Active"
+
+coordinates:
+  ra_j2000: "03:32:36.19"
+  dec_j2000: "-27:46:28.0"
+
+identifiers:
+  aspecs: "C19"
+  co_catalogue: "CO ID 12"
+  ned: "ASPECS-LP.1mm.Faint.C19"
+  galaxy_explorer: "Object 39"
+  simbad: null
+
+observations:
+  redshift:
+    value: 2.574
+    source: "Aravena et al. 2019"
+    table: 2
+
+  m160_ab:
+    value: 23.1
+    source: "Aravena et al. 2019"
+    table: 2
+
+  flux_1p2mm_uJy:
+    value: 85
+    uncertainty: 12
+    source: "Aravena et al. 2019"
+    tables: [1, 2]
+
+  flux_3mm_uJy:
+    upper_limit: 20
+    source: "Aravena et al. 2019"
+    table: 1
+
+physical_properties:
+
+  stellar_mass:
+    value: 4.4e10
+    units: "Msun"
+    method: "MAGPHYS"
+    source: "Aravena et al. 2019"
+
+  sfr:
+    value: 34
+    units: "Msun/yr"
+    method: "MAGPHYS"
+    source: "Aravena et al. 2019"
+
+  dust_temperature:
+    value: 51
+    units: "K"
+    method: "MAGPHYS"
+    source: "Aravena et al. 2019"
+
+  infrared_luminosity:
+    value: 4.1e11
+    units: "Lsun"
+    method: "MAGPHYS"
+    source: "Aravena et al. 2019"
+
+molecular_gas:
+
+  sed:
+    value: 0.9e10
+    units: "Msun"
+    source: "Aravena et al. 2019"
+
+  rayleigh_jeans:
+    value: 1.1e10
+    units: "Msun"
+    source: "Aravena et al. 2019"
+
+  co:
+    value: 1.8e10
+    units: "Msun"
+    source: "Decarli et al. 2019"
+
+references:
+  - "Aravena et al. 2019"
+  - "Decarli et al. 2019"
+
+images:
+  cover: "images/C19_JWST_candidate.png"
+
+version:
+  dossier: "0.1"
+  updated: "2026-07-31"

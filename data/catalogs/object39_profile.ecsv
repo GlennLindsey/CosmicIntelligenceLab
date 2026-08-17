@@ -1,0 +1,19 @@
+# %ECSV 1.0
+# ---
+# datatype:
+# - {name: Einstein Label, datatype: int64}
+# - {name: SIMBAD Name, datatype: string}
+# - {name: Object Type, datatype: string}
+# - {name: Measured Flux, datatype: float64}
+# - {name: Area (pixels), datatype: int64}
+# - {name: Semimajor Axis (pixels), datatype: float64}
+# - {name: Semiminor Axis (pixels), datatype: float64}
+# - {name: Orientation (deg), datatype: float64}
+# - {name: Eccentricity, datatype: float64}
+# - {name: Einstein RA (deg), datatype: float64}
+# - {name: Einstein Dec (deg), datatype: float64}
+# - {name: SIMBAD RA, datatype: string}
+# - {name: SIMBAD Dec, datatype: string}
+# schema: astropy-2.0
+"Einstein Label" "SIMBAD Name" "Object Type" "Measured Flux" "Area (pixels)" "Semimajor Axis (pixels)" "Semiminor Axis (pixels)" "Orientation (deg)" Eccentricity "Einstein RA (deg)" "Einstein Dec (deg)" "SIMBAD RA" "SIMBAD Dec"
+39 "ATCDFS J033238.75-274632.5" Rad 46.78691118955612 56 2.653217020773862 1.3991502460330931 17.000210077987287 0.8496537049927184 53.16080319528244 -27.775437497555945 53.161458333333336 -27.775694444444447
