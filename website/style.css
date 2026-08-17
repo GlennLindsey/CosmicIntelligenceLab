@@ -1,1 +1,1701 @@
-*{box-sizing:border-box;margin:0;padding:0}:root{--bg:#06101d;--alt:#0a1727;--panel:#0d1b2d;--border:#23364d;--text:#edf4ff;--muted:#9cafc5;--purple:#8b6cff;--blue:#4f9cff;--teal:#42d9c8;--green:#55d99a}html{scroll-behavior:smooth}body{background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.6}a{color:var(--blue);text-decoration:none}a:hover{color:var(--teal)}.site-header{display:flex;align-items:center;justify-content:space-between;gap:30px;padding:20px 6%;border-bottom:1px solid var(--border);background:#06101df5;position:sticky;top:0;z-index:10}.brand{display:flex;align-items:center;gap:12px}.brand-mark{font-size:30px;color:var(--purple)}.brand h1{font-size:17px;letter-spacing:1.5px;text-transform:uppercase}.brand p{color:var(--muted);font-size:12px}nav{display:flex;flex-wrap:wrap;gap:18px;justify-content:flex-end}nav a{color:var(--muted);font-size:13px}.hero{min-height:560px;display:flex;align-items:center;justify-content:space-between;gap:50px;padding:90px 8%;background:radial-gradient(circle at 80% 35%,#654ad633,transparent 30%),radial-gradient(circle at 75% 45%,#2377b52e,transparent 35%),linear-gradient(135deg,#07111f,#0a1525 60%,#07101b)}.hero-content{max-width:720px}.eyebrow{color:var(--teal);font-size:12px;font-weight:bold;letter-spacing:2.5px;margin-bottom:12px}.hero h2{font-size:clamp(42px,6vw,72px);line-height:1.05;margin-bottom:25px}.hero-text{max-width:620px;color:#bfd0e5;font-size:19px;margin-bottom:32px}.button{display:inline-block;padding:13px 22px;border-radius:7px;background:var(--purple);color:white;font-weight:bold}.hero-card{min-width:280px;padding:25px;border:1px solid var(--border);border-radius:12px;background:#081423d9}.hero-card span{color:var(--teal);font-size:12px;text-transform:uppercase;letter-spacing:1px}.hero-card h3{margin:12px 0 8px;font-size:24px}.hero-card p{color:var(--muted)}.three-column,.research-grid,.data-grid{display:grid;gap:20px}.three-column{grid-template-columns:repeat(3,1fr);padding:35px 8%}.card,.research-card,.stat,.notes article{background:var(--panel);border:1px solid var(--border);border-radius:10px}.card{padding:28px}.card-icon{font-size:27px;margin-bottom:12px}.card h3,.research-card h3{margin-bottom:10px}.card p,.research-card p,.about{color:var(--muted)}.card a{display:inline-block;margin-top:18px}.section{padding:90px 8%}.alt{background:var(--alt)}.section h2{font-size:36px;margin-bottom:35px}.research-grid{grid-template-columns:repeat(3,1fr)}.research-card{overflow:hidden}.placeholder{height:150px;display:grid;place-items:center;color:var(--muted);border-bottom:1px solid var(--border);background:linear-gradient(150deg,transparent 45%,#4f9cff40 46%,transparent 47%),linear-gradient(20deg,transparent 55%,#8b6cff33 56%,transparent 57%)}.research-content{padding:22px}.tag{display:inline-block;margin:14px 5px 0 0;padding:4px 9px;border:1px solid var(--border);border-radius:20px;color:var(--teal);font-size:11px}.data-grid{grid-template-columns:repeat(4,1fr)}.stat{padding:28px}.stat strong{display:block;color:var(--purple);font-size:32px}.stat span,.stat b{display:block}.stat span{color:var(--muted);font-size:13px}.stat b{margin-top:8px;font-size:14px}.timeline{list-style:none;max-width:800px}.timeline li{display:flex;gap:20px;padding:18px 0;border-bottom:1px solid var(--border)}.timeline li>span{width:34px;height:34px;flex:0 0 34px;display:grid;place-items:center;border:1px solid var(--border);border-radius:50%;color:var(--muted)}.timeline .complete>span{color:var(--green);border-color:var(--green)}.timeline .active>span{color:var(--purple);border-color:var(--purple)}.timeline p{color:var(--muted)}.notes{display:grid;gap:12px;max-width:900px}.notes article{display:flex;gap:20px;padding:20px}.notes article>b{color:var(--purple)}.notes p{color:var(--muted)}.einstein{text-align:center;max-width:900px;margin:auto}.einstein p:not(.eyebrow){color:var(--muted);max-width:650px;margin:15px auto 0}.about{max-width:900px;font-size:18px}footer{padding:45px 8%;border-top:1px solid var(--border);text-align:center;color:var(--muted);font-size:13px}.quote{color:var(--text);font-style:italic;font-size:17px;margin-bottom:12px}@media(max-width:900px){.site-header{align-items:flex-start;flex-direction:column}.hero{flex-direction:column;align-items:flex-start}.three-column,.research-grid,.data-grid{grid-template-columns:1fr}}
+/* ============================================================
+   COSMIC INTELLIGENCE LAB
+   SUPERNOVA MONITORING AI PROJECT
+   Clean Responsive Stylesheet
+   ============================================================ */
+
+
+/* ============================================================
+   GLOBAL RESET
+   ============================================================ */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg: #07111e;
+    --bg2: #0a1524;
+    --panel: #101d2d;
+    --panel2: #0d1929;
+    --border: #243750;
+
+    --text: #eef4ff;
+    --muted: #9fb1c8;
+
+    --purple: #8a61ff;
+    --blue: #4e7fff;
+    --teal: #48d9c2;
+    --green: #5bd39b;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.45;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+}
+
+
+/* ============================================================
+   MAIN APPLICATION LAYOUT
+   ============================================================ */
+
+.app-shell {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 240px minmax(0, 1fr);
+}
+
+
+/* ============================================================
+   SIDEBAR
+   ============================================================ */
+
+.sidebar {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px 10px 18px;
+
+    background:
+        linear-gradient(180deg,
+            #0b1524 0%,
+            #101a29 100%);
+
+    border-right: 1px solid var(--border);
+}
+
+
+/* ---------- Sidebar branding ---------- */
+
+.sidebar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 0 10px 18px;
+}
+
+.brand-logo {
+    width: 43px;
+    height: 43px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 50%;
+
+    color: #a68cff;
+    font-size: 31px;
+
+    text-shadow: 0 0 18px #805fff;
+}
+
+.brand-title {
+    color: #f2f5ff;
+
+    font-size: 22px;
+    font-weight: 800;
+    line-height: .98;
+    letter-spacing: 1.3px;
+}
+
+.brand-title span {
+    color: var(--purple);
+}
+
+.brand-subtitle {
+    margin-top: 12px;
+
+    color: #a8b7cb;
+    font-size: 9px;
+}
+
+
+/* ---------- Navigation ---------- */
+
+.side-nav {
+    display: grid;
+    gap: 3px;
+    margin-top: 4px;
+}
+
+.side-nav a {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+
+    padding: 9px 10px;
+
+    border-radius: 6px;
+
+    color: #aebbd0;
+
+    font-size: 14px;
+    line-height: 1.35;
+
+    text-decoration: none;
+
+    transition:
+        background .2s ease,
+        color .2s ease;
+}
+
+.side-nav a span {
+    width: 17px;
+    flex: 0 0 17px;
+
+    text-align: center;
+
+    color: #a8b7cc;
+    font-size: 16px;
+}
+
+.side-nav a.active,
+.side-nav a:hover {
+    color: #dcd5ff;
+
+    background:
+        linear-gradient(90deg,
+            #27195a,
+            #241b4f);
+}
+
+.side-nav a.active span {
+    color: #c1aaff;
+}
+
+
+/* ---------- Current focus ---------- */
+
+.focus-panel {
+    margin-top: 14px;
+    padding: 15px;
+
+    border: 1px solid var(--border);
+    border-radius: 7px;
+
+    background: rgba(18, 30, 47, .9);
+}
+
+.focus-heading {
+    color: var(--teal);
+
+    font-size: 11px;
+    font-weight: 700;
+
+    margin-bottom: 13px;
+}
+
+.focus-heading span {
+    font-size: 17px;
+    margin-right: 7px;
+}
+
+.focus-panel h3 {
+    color: var(--teal);
+
+    font-size: 18px;
+    line-height: 1.2;
+
+    margin-bottom: 9px;
+}
+
+.focus-panel p {
+    color: #a9b9cc;
+
+    font-size: 12px;
+    line-height: 1.55;
+
+    margin-top: 5px;
+}
+
+
+/* ---------- Einstein ---------- */
+
+.einstein-mini {
+    display: flex;
+    gap: 11px;
+
+    padding: 14px;
+
+    border: 1px solid var(--border);
+    border-top: 0;
+    border-radius: 0 0 7px 7px;
+
+    background: rgba(18, 30, 47, .9);
+}
+
+.einstein-icon {
+    color: var(--purple);
+
+    font-size: 34px;
+    line-height: 1;
+}
+
+.einstein-mini h3 {
+    color: #a88aff;
+
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.einstein-mini p {
+    color: #a9b9cc;
+
+    font-size: 10px;
+    line-height: 1.45;
+}
+
+
+/* ---------- Sidebar quote ---------- */
+
+.sidebar-quote {
+    margin-top: auto;
+    padding: 16px 10px 0;
+
+    color: #8798ad;
+
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.sidebar-quote span {
+    display: block;
+    margin-top: 7px;
+}
+
+
+/* ============================================================
+   MAIN CONTENT
+   ============================================================ */
+
+.main-content {
+    min-width: 0;
+    width: 100%;
+}
+
+
+/* ============================================================
+   HERO
+   ============================================================ */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+
+    min-height: 300px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 38px 40px;
+
+    border-bottom: 1px solid var(--border);
+
+    background:
+        radial-gradient(circle at 76% 45%,
+            rgba(139, 97, 255, .16),
+            transparent 30%),
+        linear-gradient(100deg,
+            #07121f 0%,
+            #091524 52%,
+            #111a25 100%);
+}
+
+
+/* ---------- Hero text ---------- */
+
+.hero-copy {
+    position: relative;
+    z-index: 3;
+
+    width: 50%;
+    max-width: 600px;
+}
+
+.eyebrow {
+    color: var(--teal);
+
+    font-size: 14px;
+    font-weight: 800;
+
+    letter-spacing: 2.5px;
+
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 4vw, 58px);
+    line-height: 1.02;
+
+    letter-spacing: -1px;
+
+    margin-bottom: 15px;
+}
+
+.hero-copy>p:not(.eyebrow) {
+    color: #bfd0e4;
+
+    max-width: 600px;
+
+    font-size: 17px;
+    line-height: 1.55;
+
+    margin-bottom: 20px;
+}
+
+
+/* ---------- Hero button ---------- */
+
+.primary-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 11px 17px;
+
+    border-radius: 5px;
+
+    background:
+        linear-gradient(90deg,
+            #6942d8,
+            #7548ef);
+
+    color: white;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+
+/* ============================================================
+   M51 HERO VISUAL
+   ============================================================ */
+
+/*
+   IMPORTANT:
+   This replaces the old .hero-image and .galaxy-label system.
+
+   Desktop:
+   - M51 occupies the right half of the hero.
+   - Image fills the visual area.
+   - Text remains on the left.
+*/
+
+.hero-visual {
+    position: absolute;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    width: 50%;
+
+    overflow: hidden;
+
+    z-index: 1;
+
+    background: #050b12;
+}
+
+.m51-hero-image {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: right top;
+
+    display: block;
+
+    z-index: 1;
+}
+
+
+/* ---------- M51 information card ---------- */
+
+.hero-galaxy-card {
+    left: 14px;
+    right: auto;
+    bottom: 14px;
+
+    min-width: 0;
+    width: auto;
+    max-width: calc(100% - 28px);
+
+    padding: 9px 12px;
+}
+
+.hero-galaxy-card strong {
+    font-size: 14px;
+}
+
+.hero-galaxy-card span {
+    font-size: 10px;
+}
+
+.hero-galaxy-card small {
+    font-size: 9px;
+}
+
+
+/* ============================================================
+   FEATURE CARDS
+   ============================================================ */
+
+.feature-row {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 16px;
+
+    padding: 16px 24px;
+
+    background: #081321;
+}
+
+.feature-card {
+    min-width: 0;
+    min-height: 125px;
+
+    display: flex;
+    gap: 15px;
+
+    padding: 17px 18px;
+
+    border: 1px solid var(--border);
+    border-radius: 6px;
+
+    background:
+        linear-gradient(145deg,
+            #111e30,
+            #0e1a2a);
+}
+
+.feature-icon {
+    width: 32px;
+    flex: 0 0 32px;
+
+    font-size: 27px;
+    line-height: 1;
+
+    text-align: center;
+}
+
+.purple {
+    color: #a36dff;
+}
+
+.blue {
+    color: #538bff;
+}
+
+.green {
+    color: #52d49a;
+}
+
+.feature-card h2 {
+    font-size: 18px;
+    line-height: 1.3;
+
+    margin-bottom: 8px;
+}
+
+.feature-card p {
+    color: #a8b8cb;
+
+    font-size: 14px;
+    line-height: 1.55;
+}
+
+.feature-card a,
+.panel-link {
+    display: inline-block;
+
+    margin-top: 8px;
+
+    color: #7e8fff;
+
+    font-size: 12px;
+
+    text-decoration: none;
+}
+
+
+/* ============================================================
+   DASHBOARD
+   ============================================================ */
+
+.dashboard-grid {
+    display: grid;
+
+    grid-template-columns:
+        1.08fr 1.08fr .9fr;
+
+    grid-template-areas:
+        "recent progress notes"
+        "recent progress data";
+
+    gap: 16px;
+
+    padding: 0 24px 20px;
+
+    background: #081321;
+}
+
+.panel {
+    min-width: 0;
+
+    border: 1px solid var(--border);
+    border-radius: 6px;
+
+    background:
+        linear-gradient(145deg,
+            #111e30,
+            #0d1929);
+
+    overflow: hidden;
+}
+
+.recent-analysis {
+    grid-area: recent;
+}
+
+.progress-panel {
+    grid-area: progress;
+}
+
+.notes-panel {
+    grid-area: notes;
+}
+
+.data-panel {
+    grid-area: data;
+    align-self: start;
+}
+
+
+/* ============================================================
+   PANEL HEADINGS
+   ============================================================ */
+
+.panel-title {
+    padding: 14px 16px 11px;
+
+    font-size: 18px;
+    line-height: 1.3;
+
+    font-weight: 700;
+
+    color: #dce7f7;
+}
+
+
+/* ============================================================
+   RECENT ANALYSIS
+   ============================================================ */
+
+.analysis-item {
+    display: grid;
+
+    grid-template-columns: 100px minmax(0, 1fr);
+
+    gap: 12px;
+
+    padding: 10px 16px;
+}
+
+.thumb {
+    height: 60px;
+
+    display: grid;
+    place-items: center;
+
+    border: 1px solid #30425a;
+    border-radius: 3px;
+
+    color: #b6c7da;
+
+    font-size: 8px;
+
+    background:
+        linear-gradient(transparent 49%,
+            rgba(89, 134, 191, .35) 50%,
+            transparent 51%),
+        #edf1f4;
+}
+
+.resolution-thumb {
+    background:
+        linear-gradient(#eef2f6,
+            #d9e1ea);
+
+    color: #526b87;
+}
+
+.galaxy-thumb {
+    color: #d4c6b4;
+
+    background:
+        radial-gradient(circle at 50% 50%,
+            #d7b38c 0 4%,
+            #765c63 5% 12%,
+            transparent 13%),
+        radial-gradient(circle at 50% 50%,
+            #2f5073 0 32%,
+            #07111d 60%);
+}
+
+.analysis-item h3 {
+    font-size: 16px;
+    line-height: 1.35;
+
+    margin-bottom: 3px;
+}
+
+.analysis-item p {
+    color: #9fb1c6;
+
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.analysis-item small {
+    color: #8d9db1;
+
+    font-size: 10px;
+}
+
+.panel-link {
+    margin: 9px 16px 14px;
+}
+
+
+/* ============================================================
+   PROJECT PROGRESS
+   ============================================================ */
+
+.progress-list {
+    list-style: none;
+
+    padding: 0 16px 10px;
+}
+
+.progress-list li {
+    position: relative;
+
+    padding: 9px 0 9px 32px;
+
+    border-left: 1px solid #2a3b52;
+}
+
+.progress-list li::before {
+    content: attr(data-step);
+
+    position: absolute;
+
+    left: -9px;
+    top: 7px;
+
+    width: 17px;
+    height: 17px;
+
+    border: 1px solid #34465d;
+    border-radius: 50%;
+
+    background: #111e30;
+}
+
+.progress-list li.complete::before {
+    content: "✓";
+
+    display: grid;
+    place-items: center;
+
+    border-color: #42d49a;
+    color: #42d49a;
+}
+
+.progress-list li.current::before {
+    content: "4";
+
+    display: grid;
+    place-items: center;
+
+    border-color: #5c83ff;
+
+    background: #3c65d5;
+
+    color: white;
+}
+
+.progress-list b {
+    display: inline-block;
+
+    font-size: 16px;
+    line-height: 1.35;
+}
+
+.progress-list span {
+    float: right;
+
+    color: #70cfa9;
+
+    font-size: 8px;
+}
+
+.progress-list li.current span {
+    color: #6c8fff;
+}
+
+.progress-list li:not(.complete):not(.current) span {
+    color: #7f8da1;
+}
+
+.progress-list small {
+    display: block;
+
+    color: #8fa2b8;
+
+    font-size: 11px;
+    line-height: 1.45;
+}
+
+
+/* ============================================================
+   RESEARCH NOTES
+   ============================================================ */
+
+.note-item {
+    display: flex;
+    gap: 9px;
+
+    align-items: flex-start;
+
+    padding: 9px 16px;
+
+    text-decoration: none;
+}
+
+.note-item>span {
+    color: #a8b4c6;
+
+    font-size: 15px;
+}
+
+.note-item b {
+    display: block;
+
+    font-size: 16px;
+    line-height: 1.35;
+}
+
+.note-item small {
+    display: block;
+
+    color: #8c9caf;
+
+    font-size: 10px;
+
+    margin-top: 2px;
+}
+
+
+/* ============================================================
+   DATA SNAPSHOT
+   ============================================================ */
+
+.snapshot {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    border-top: 1px solid #203148;
+}
+
+.snapshot>div {
+    min-width: 0;
+
+    padding: 11px 4px;
+
+    text-align: center;
+
+    border-right: 1px solid #203148;
+}
+
+.snapshot>div:last-child {
+    border-right: 0;
+}
+
+.snapshot strong {
+    display: block;
+
+    color: var(--purple);
+
+    font-size: 20px;
+}
+
+.snapshot>div:last-child strong {
+    color: var(--green);
+
+    font-size: 11px;
+}
+
+.snapshot span {
+    color: #8fa2b8;
+
+    font-size: 10px;
+    line-height: 1.35;
+}
+
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+
+.site-footer {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1.2fr 1fr;
+
+    gap: 20px;
+
+    align-items: center;
+
+    min-height: 76px;
+
+    padding: 12px 24px;
+
+    border-top: 1px solid var(--border);
+
+    background: #0a1422;
+
+    color: #8798ad;
+
+    font-size: 11px;
+}
+
+.footer-quote,
+.footer-center,
+.footer-right {
+    display: grid;
+    gap: 5px;
+}
+
+.footer-center {
+    text-align: center;
+}
+
+.footer-center strong {
+    font-size: 12px;
+    color: #8f9eb2;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-right strong {
+    color: #9ba8b9;
+}
+
+
+/* ============================================================
+   HIDDEN ANCHORS
+   ============================================================ */
+
+.hidden-anchor {
+    height: 0;
+    overflow: hidden;
+}
+
+
+/* ============================================================
+   TABLET — 1100px
+   ============================================================ */
+
+@media (max-width: 1100px) {
+
+    .app-shell {
+        grid-template-columns: 205px minmax(0, 1fr);
+    }
+
+    .sidebar {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .brand-title {
+        font-size: 19px;
+    }
+
+    .side-nav a {
+        font-size: 13px;
+        padding: 8px 9px;
+    }
+
+    /*
+       At this width the dashboard becomes two columns.
+    */
+
+    .dashboard-grid {
+        grid-template-columns:
+            minmax(0, 1fr) minmax(0, 1fr);
+
+        grid-template-areas:
+            "recent progress"
+            "notes data";
+    }
+
+    /*
+       Feature cards remain three columns,
+       but typography becomes slightly smaller.
+    */
+
+    .feature-card h2 {
+        font-size: 16px;
+    }
+
+    .feature-card p {
+        font-size: 12px;
+    }
+
+    /*
+       Hero text gets slightly less room.
+    */
+
+    .hero-copy {
+        width: 53%;
+    }
+
+    .hero h1 {
+        font-size: clamp(40px, 4.5vw, 52px);
+    }
+
+    .hero-copy>p:not(.eyebrow) {
+        font-size: 15px;
+    }
+
+    .hero-visual {
+        width: 47%;
+    }
+}
+
+
+/* ============================================================
+   TABLET — 900px
+   ============================================================ */
+
+@media (max-width: 900px) {
+
+    /*
+       The hero now becomes a true vertical composition.
+
+       This is the important change for tablets:
+       the M51 image is no longer fighting the text for space.
+    */
+
+    .hero {
+        display: block;
+
+        min-height: 0;
+
+        padding: 32px 28px 0;
+    }
+
+    .hero-copy {
+        width: 100%;
+        max-width: 650px;
+
+        padding-bottom: 28px;
+    }
+
+    .hero h1 {
+        font-size: clamp(40px, 7vw, 54px);
+    }
+
+    .hero-copy>p:not(.eyebrow) {
+        max-width: 650px;
+        font-size: 16px;
+    }
+
+    .hero-visual {
+        position: relative;
+
+        top: auto;
+        right: auto;
+        bottom: auto;
+
+        width: 100%;
+        height: 300px;
+
+        margin: 0;
+
+        border-top: 1px solid var(--border);
+    }
+
+    .m51-hero-image {
+        object-position: center center;
+    }
+
+    .hero-galaxy-card {
+        right: 20px;
+        top: auto;
+        bottom: 20px;
+
+        transform: none;
+    }
+
+    /*
+       Feature cards become two columns.
+    */
+
+    .feature-row {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        padding: 16px 20px;
+    }
+
+    /*
+       Dashboard remains two columns.
+    */
+
+    .dashboard-grid {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/* ============================================================
+   PHONE — 760px
+   ============================================================ */
+
+@media (max-width: 760px) {
+
+    /* ---------- Overall layout ---------- */
+
+    .app-shell {
+        display: block;
+    }
+
+
+    /* ---------- Compact mobile sidebar ---------- */
+
+    .sidebar {
+        position: relative;
+
+        width: 100%;
+        height: auto;
+
+        padding: 12px 14px;
+
+        border-right: 0;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .sidebar-brand {
+        padding: 0 4px 10px;
+    }
+
+    .brand-logo {
+        width: 38px;
+        height: 38px;
+
+        font-size: 27px;
+    }
+
+    .brand-title {
+        font-size: 18px;
+    }
+
+    .brand-subtitle {
+        font-size: 8px;
+        margin-top: 7px;
+    }
+
+
+    /* ---------- Mobile navigation ---------- */
+
+    .side-nav {
+        display: grid;
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 2px 8px;
+
+        margin-top: 4px;
+    }
+
+    .side-nav a {
+        min-width: 0;
+
+        padding: 6px 5px;
+
+        font-size: 12px;
+        line-height: 1.25;
+    }
+
+    .side-nav a span {
+        font-size: 14px;
+    }
+
+
+    /*
+       The full desktop Current Focus and Einstein
+       panels are too tall on a phone.
+
+       We retain them in the desktop/tablet sidebar,
+       but remove them from the mobile sidebar so
+       the research content begins much sooner.
+    */
+
+    .focus-panel,
+    .einstein-mini {
+        display: none;
+    }
+
+    .sidebar-quote {
+        display: none;
+    }
+
+
+    /* ========================================================
+       HERO
+       ======================================================== */
+
+    .hero {
+        display: block;
+
+        min-height: 0;
+
+        padding: 25px 18px 0;
+    }
+
+    .hero-copy {
+        width: 100%;
+        max-width: none;
+
+        padding-bottom: 24px;
+    }
+
+    .eyebrow {
+        font-size: 12px;
+        letter-spacing: 2px;
+
+        margin-bottom: 9px;
+    }
+
+    .hero h1 {
+        font-size: clamp(36px, 10vw, 48px);
+        line-height: 1.03;
+
+        letter-spacing: -.5px;
+    }
+
+    .hero-copy>p:not(.eyebrow) {
+        font-size: 15px;
+        line-height: 1.55;
+
+        margin-bottom: 18px;
+    }
+
+
+    /* ---------- M51 ---------- */
+
+    .hero-visual {
+        position: relative;
+
+        top: auto;
+        right: auto;
+        bottom: auto;
+        left: auto;
+
+        width: 100%;
+        height: 260px;
+
+        margin: 0;
+
+        border-top: 1px solid var(--border);
+    }
+
+    .m51-hero-image {
+        position: absolute;
+
+        inset: 0;
+
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+        object-position: center center;
+    }
+
+    .hero-galaxy-card {
+        left: 14px;
+        right: auto;
+
+        top: auto;
+        bottom: 14px;
+
+        transform: none;
+
+        min-width: 0;
+        width: auto;
+        max-width: calc(100% - 28px);
+
+        padding: 9px 12px;
+    }
+
+    .hero-galaxy-card strong {
+        font-size: 14px;
+    }
+
+    .hero-galaxy-card span {
+        font-size: 10px;
+    }
+
+    .hero-galaxy-card small {
+        font-size: 9px;
+    }
+
+
+    /* ========================================================
+       FEATURE CARDS
+       ======================================================== */
+
+    .feature-row {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+
+        padding: 14px 16px;
+    }
+
+    .feature-card {
+        min-height: 0;
+
+        padding: 16px;
+    }
+
+    .feature-card h2 {
+        font-size: 18px;
+    }
+
+    .feature-card p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+
+    /* ========================================================
+       DASHBOARD
+       ======================================================== */
+
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+
+        grid-template-areas:
+            "recent"
+            "progress"
+            "notes"
+            "data";
+
+        gap: 12px;
+
+        padding: 0 16px 16px;
+    }
+
+    .panel-title {
+        font-size: 19px;
+    }
+
+    .analysis-item {
+        grid-template-columns:
+            88px minmax(0, 1fr);
+    }
+
+    .analysis-item h3 {
+        font-size: 15px;
+    }
+
+    .analysis-item p {
+        font-size: 12px;
+    }
+
+    .progress-list b,
+    .note-item b {
+        font-size: 15px;
+    }
+
+
+    /* ========================================================
+       FOOTER
+       ======================================================== */
+
+    .site-footer {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+
+        padding: 16px;
+
+        text-align: left;
+    }
+
+    .footer-center,
+    .footer-right {
+        text-align: left;
+    }
+}
+
+
+/* ============================================================
+   SMALL PHONE — 480px
+   ============================================================ */
+
+@media (max-width: 480px) {
+
+    /* ---------- Sidebar ---------- */
+
+    .sidebar {
+        padding: 10px 10px 11px;
+    }
+
+    .sidebar-brand {
+        padding-bottom: 8px;
+    }
+
+    .brand-logo {
+        width: 34px;
+        height: 34px;
+
+        font-size: 24px;
+    }
+
+    .brand-title {
+        font-size: 17px;
+    }
+
+    .brand-subtitle {
+        font-size: 7px;
+        margin-top: 5px;
+    }
+
+    .side-nav {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 1px 6px;
+    }
+
+    .side-nav a {
+        padding: 5px 4px;
+
+        font-size: 11px;
+    }
+
+    .side-nav a span {
+        font-size: 13px;
+    }
+
+
+    /* ---------- Hero ---------- */
+
+    .hero {
+        padding: 22px 15px 0;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-copy>p:not(.eyebrow) {
+        font-size: 14px;
+    }
+
+    .primary-button {
+        font-size: 13px;
+
+        padding: 10px 14px;
+    }
+
+
+    /* ---------- M51 ---------- */
+
+    .hero-visual {
+        height: 220px;
+    }
+
+    .hero-galaxy-card {
+        left: 12px;
+        bottom: 12px;
+
+        max-width: calc(100% - 24px);
+
+        padding: 8px 10px;
+    }
+
+    .hero-galaxy-card strong {
+        font-size: 13px;
+    }
+
+    .hero-galaxy-card span {
+        font-size: 10px;
+    }
+
+    .hero-galaxy-card small {
+        font-size: 8px;
+    }
+
+
+    /* ---------- Feature cards ---------- */
+
+    .feature-row {
+        padding: 12px;
+    }
+
+    .feature-card {
+        gap: 11px;
+
+        padding: 14px;
+    }
+
+    .feature-icon {
+        width: 27px;
+        flex-basis: 27px;
+
+        font-size: 23px;
+    }
+
+    .feature-card h2 {
+        font-size: 17px;
+    }
+
+    .feature-card p {
+        font-size: 13px;
+    }
+
+
+    /* ---------- Dashboard ---------- */
+
+    .dashboard-grid {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .panel-title {
+        font-size: 18px;
+    }
+
+    .analysis-item {
+        grid-template-columns:
+            76px minmax(0, 1fr);
+
+        gap: 10px;
+
+        padding: 9px 12px;
+    }
+
+    .thumb {
+        height: 52px;
+    }
+
+    .analysis-item h3 {
+        font-size: 14px;
+    }
+
+    .analysis-item p {
+        font-size: 11px;
+    }
+
+    .analysis-item small {
+        font-size: 9px;
+    }
+
+    .progress-list {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .progress-list b,
+    .note-item b {
+        font-size: 14px;
+    }
+
+    .note-item {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+
+    /* ---------- Data snapshot ---------- */
+
+    .snapshot strong {
+        font-size: 17px;
+    }
+
+    .snapshot span {
+        font-size: 9px;
+    }
+
+
+    /* ---------- Footer ---------- */
+
+    .site-footer {
+        font-size: 10px;
+    }
+
+    .footer-center strong {
+        font-size: 11px;
+    }
+}
+
+/* ============================================================
+   LARGE DESKTOP — 1400px+
+   Final desktop scale adjustment
+   ============================================================ */
+
+@media (min-width: 1400px) {
+
+    /* Give the main page a little more visual scale */
+
+    .hero {
+        min-height: 320px;
+    }
+
+    .hero-copy {
+        padding: 42px 44px 36px;
+    }
+
+    .hero h1 {
+        font-size: 52px;
+        line-height: 1.02;
+    }
+
+    .hero-copy>p:not(.eyebrow) {
+        font-size: 16px;
+        line-height: 1.55;
+        max-width: 560px;
+    }
+
+    .eyebrow {
+        font-size: 13px;
+        letter-spacing: 2.5px;
+    }
+
+    .primary-button {
+        font-size: 14px;
+        padding: 12px 17px;
+    }
+
+
+    /* M51 */
+
+    .hero-visual {
+        min-height: 320px;
+    }
+
+    .hero-galaxy-card {
+        right: 28px;
+        bottom: 24px;
+
+        padding: 14px 17px;
+    }
+
+    .hero-galaxy-card strong {
+        font-size: 16px;
+    }
+
+    .hero-galaxy-card span {
+        font-size: 12px;
+    }
+
+    .hero-galaxy-card small {
+        font-size: 10px;
+    }
+
+
+    /* Feature cards */
+
+    .feature-row {
+        gap: 14px;
+        padding: 16px 20px;
+    }
+
+    .feature-card {
+        padding: 20px;
+    }
+
+    .feature-card h2 {
+        font-size: 19px;
+    }
+
+    .feature-card p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+
+    /* Dashboard */
+
+    .dashboard-grid {
+        gap: 14px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .panel-title {
+        font-size: 20px;
+    }
+
+    .analysis-item h3 {
+        font-size: 15px;
+    }
+
+    .analysis-item p {
+        font-size: 12px;
+    }
+
+    .progress-list b,
+    .note-item b {
+        font-size: 15px;
+    }
+
+
+    /* Footer */
+
+    .site-footer {
+        font-size: 11px;
+    }
+}

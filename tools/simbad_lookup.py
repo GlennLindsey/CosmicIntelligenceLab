@@ -10,8 +10,12 @@ def simbad_lookup(name):
     result = simbad.query_object(name)
 
     if result is None:
-        return create_evidence("SIMBAD", name, {"status": "not_found"})
-
+        return create_evidence(
+            evidence_type="astronomical_database",
+            source="SIMBAD",
+            object_name=name,
+            facts={"status": "not_found"},
+        )
     row = result[0]
 
     facts = {
@@ -22,4 +26,9 @@ def simbad_lookup(name):
         "matched_id": str(row["matched_id"]),
     }
 
-    return create_evidence("SIMBAD", name, facts)
+    return create_evidence(
+        evidence_type="astronomical_database",
+        source="SIMBAD",
+        object_name=name,
+        facts=facts,
+    )

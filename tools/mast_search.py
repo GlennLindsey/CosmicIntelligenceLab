@@ -10,9 +10,10 @@ def mast_search(name, radius="0.02 deg"):
     if observations is None or len(observations) == 0:
 
         return create_evidence(
-            "MAST",
-            name,
-            {
+            evidence_type="archive",
+            source="MAST",
+            object_name=name,
+            facts={
                 "status": "no_observations",
                 "total_observations": 0,
                 "missions": [],
@@ -43,4 +44,9 @@ def mast_search(name, radius="0.02 deg"):
         "search_radius": radius,
     }
 
-    return create_evidence("MAST", name, facts)
+    return create_evidence(
+        evidence_type="archive",
+        source="MAST",
+        object_name=name,
+        facts=facts,
+    )
