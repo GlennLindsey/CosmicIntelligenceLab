@@ -1,0 +1,2 @@
+observed_ratio,ratio_uncertainty,best_Te_K,best_ne_cm3,best_log10_ne,best_A_V_mag,best_intrinsic_ratio,best_predicted_ratio,best_sigma_distance,n_grid_points,n_within_1sigma,n_within_2sigma,n_within_3sigma,Te_min_1sigma_K,Te_max_1sigma_K,log10_ne_min_1sigma,log10_ne_max_1sigma,A_V_min_1sigma,A_V_max_1sigma
+3.3523777910595367,0.10320279866131106,20000.0,100000000000.0,11.0,5.6000000000000005,1.8851590290517304,3.352457727159433,0.0007745536064243552,28743,1716,3430,5153,5000.0,50000.0,2.0,14.0,4.95,6.65

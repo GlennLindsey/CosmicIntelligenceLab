@@ -404,3 +404,129 @@ promising hypothesis but remains **NOT ESTABLISHED**.
 The next step is to examine the individual line profiles and measure
 their centroids, widths, and integrated fluxes before assigning physical
 identifications.
+
+## 2026-08-21 — C I Velocity Constraint and Non-Negative Amplitude Test
+
+The M51 1284.26 nm feature was investigated as a possible blend of
+neutral carbon (C I) transitions using the locally constructed NIST ASD
+atomic-line catalogue.
+
+The independent M51 reference velocity used throughout the analysis is:
+
+    v = +573.72 km/s
+
+At this velocity, six C I transitions from the catalogue fall within one
+NIRSpec instrumental FWHM of the observed 1284.2613 nm feature.
+
+### Unconstrained C I fitting
+
+Earlier phenomenological fits allowed C I line amplitudes to take either
+positive or negative values. These fits could substantially reduce chi²,
+but some C I amplitudes became negative. Such coefficients cannot
+represent physical emission and therefore cannot be interpreted as
+evidence for C I.
+
+The unconstrained C I velocity was also substantially displaced from the
+independently measured M51 velocity.
+
+### Non-negative C I test
+
+A new fit was performed in which:
+
+- the continuum remained unrestricted;
+- Pa-β was fitted as an emission component;
+- all C I emission amplitudes were constrained to be >= 0;
+- the six C I components shared a common velocity;
+- the constrained C I velocity was fixed at +573.72 km/s in the primary
+  test;
+- a second model allowed the C I velocity to vary.
+
+Results:
+
+| Model | chi² | AIC | BIC |
+|---|---:|---:|---:|
+| Pa-β | 1827.521 | 1835.521 | 1839.298 |
+| Pa-β + C I, constrained | 1827.521 | 1847.521 | 1856.965 |
+| Pa-β + C I, free velocity | 1827.521 | 1849.521 | 1859.909 |
+
+The constrained C I model produced no improvement in chi² over the
+Pa-β-only model.
+
+All six C I amplitudes were driven effectively to zero by the
+non-negative constraint.
+
+The free-velocity C I model also produced zero-amplitude C I components.
+Because all C I amplitudes are effectively zero, the +250 km/s 
+optimizer boundary is not a meaningful C I velocity measurement.
+
+### Current interpretation
+
+The present analysis provides no positive evidence that C I emission is
+required to explain the M51 1284.26 nm feature.
+
+The result is substantially stronger than the earlier unrestricted
+C I fits because the C I components are now required to behave as
+physical emission lines rather than mathematical positive/negative
+profile corrections.
+
+The Pa-β-only model is preferred by both AIC and BIC.
+
+This does not by itself prove that the feature is Pa-β. Alternative
+identifications and a more complete treatment of intrinsic line width,
+line blending, continuum placement, and physical excitation remain to
+be investigated.
+
+### Spectroscopy Agent development
+
+This experiment establishes an important methodological principle for
+the Spectroscopy Agent:
+
+> Statistical improvement from an unconstrained spectral component is
+> not sufficient evidence for an atomic identification. Emission-line
+> amplitudes should be subject to physically appropriate constraints.
+
+Next investigation: test whether the Pa-β feature requires intrinsic
+line broadening beyond the instrumental NIRSpec profile.
+
+## 7.9 Pa-β Intrinsic-Width Test
+
+### Objective
+
+The previous velocity-constraint experiments established that the 1284.2613 nm feature is extremely well aligned with Pa-β at the independently measured M51 velocity of **+573.72 km/s**.
+
+The next question was whether the feature requires intrinsic broadening beyond the instrumental NIRSpec line-spread function.
+
+We therefore compared:
+
+1. **Instrumental-width Pa-β**
+   - Pa-β velocity fitted freely.
+   - Observed Gaussian width fixed to the NIRSpec instrumental width.
+
+2. **Free-intrinsic-width Pa-β**
+   - Pa-β velocity fitted freely.
+   - Intrinsic Gaussian width allowed to vary.
+   - Observed width calculated from the instrumental and intrinsic widths in quadrature.
+
+The intrinsic width was calculated as:
+
+\[
+\sigma_{\rm intrinsic}
+=
+\sqrt{
+\sigma_{\rm observed}^{2}
+-
+\sigma_{\rm instrumental}^{2}
+}
+\]
+
+This test was performed on the same 1278–1290 nm M51 X1D spectral window used in the preceding 1284 nm investigations.
+
+---
+
+### Observational and Instrumental Parameters
+
+M51 JWST/NIRSpec X1D spectrum:
+
+```text
+data/m51_jwst_level3/
+jw03435-o006_t010_nirspec_g140m-f100lp_x1d.fits
