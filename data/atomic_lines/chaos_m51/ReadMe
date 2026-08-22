@@ -1,0 +1,235 @@
+J/ApJ/808/42   CHemical Abundances of Spirals (CHAOS) II. M51   (Croxall+, 2015)
+================================================================================
+CHAOS.
+II. Gas-phase abundances in NGC 5194.
+    Croxall K.V., Pogge R.W., Berg D.A., Skillman E.D., Moustakas J.
+   <Astrophys. J., 808, 42 (2015)>
+   =2015ApJ...808...42C    (SIMBAD/NED BibCode)
+================================================================================
+ADC_Keywords: Abundances ; Galaxies, nearby ; Spectroscopy
+Keywords: galaxies: abundances; galaxies: individual: NGC 5194;
+          galaxies: spiral; H ii regions; ISM: abundances
+
+Abstract:
+    We have observed NGC 5194 (M51a) as part of the CHemical Abundances of
+    Spirals project (CHAOS). Using the Multi Object Double Spectrographs
+    on the Large Binocular Telescope we are able to measure one or more of
+    the temperature-sensitive auroral lines ([OIII]{lambda}4363,
+    [NII]{lambda}5755, [SIII]{lambda}6312) and thus measure "direct"
+    gas-phase abundances in 29 individual HII regions. [OIII]{lambda}4363
+    is only detected in two HII regions, both of which show indications of
+    excitation by shocks. We compare our data to previous direct
+    abundances measured in NGC 5194 and find excellent agreement
+    ({Delta}[log(O/H)]~0.05) for all but one region. We find no evidence
+    of trends in Ar/O, Ne/O, or S/O within NGC 5194 or compared to other
+    galaxies. We find modest negative gradients in both O/H and N/O with
+    very little scatter ({sigma}<=0.08dex), most of which can be
+    attributed to random error and not to intrinsic dispersion. The
+    gas-phase abundance gradient is consistent with the gradients observed
+    in other interacting galaxies, which tend to be shallower than
+    gradients measured in isolated galaxies. The N/O ratio
+    (<log(N/O)>=-0.62) suggests secondary nitrogen production is
+    responsible for a significantly larger fraction of nitrogen (e.g.,
+    factor of 8-10), relative to primary production mechanisms than
+    predicted by theoretical models.
+
+Description:
+    Optical spectra of NGC 5194 were acquired with the Multi-Object Double
+    Spectrographs (MODS) on the Large Binocular Telescope (LBT) as part of
+    the CHemical Abundances of Spirals project (CHAOS) study during 2012
+    April. We obtained broad spectral coverage extending from
+    3100-10000{AA} with the G400L (R~1850) and G670L (R~2300) gratings.
+
+Objects:
+    ---------------------------------------------
+         RA   (ICRS)   DE        Designation(s)
+    ---------------------------------------------
+     13 29 52.70   +47 11 42.9   NGC 5194 = M 51
+    ---------------------------------------------
+
+File Summary:
+--------------------------------------------------------------------------------
+ FileName      Lrecl  Records   Explanations
+--------------------------------------------------------------------------------
+ReadMe            80        .   This file
+table2.dat        73       64  *NGC 5194 MODS/LBT observations
+table3a.dat       60     4736   Line fluxes relative to H{beta}
+table3b.dat       65       64   Equivalent widths
+table5.dat       354       29   Abundances in NGC 5194
+--------------------------------------------------------------------------------
+Note on table2.dat: Observing logs for HII regions observed in NGC 5194 using
+   MODS on the LBT on the UT dates of 2012 April 29 and 30. Each field was
+   observed over an integrated exposure time of 1200s on clear nights, with, on
+   average ~1.00" seeing, and airmasses less than 1.5. Slit ID.
+--------------------------------------------------------------------------------
+
+See also:
+ J/ApJ/806/16   : CHemical Abundances of Spirals (CHAOS) I. NGC628 (Berg+, 2015)
+ J/MNRAS/424/2316 : Abundances in HII regions (Pilyugin+, 2012)
+ J/ApJ/735/75   : HST observations of HII regions in M51 (Lee+, 2011)
+ J/ApJS/190/233 : Spectroscopy & abundances of SINGS galaxies (Moustakas+, 2010)
+ J/AJ/140/416   : IR photometry of massive stars in the SMC (Bonanos+, 2010)
+ J/ApJ/700/654  : Keck spectroscopy of extragalactic HII regions (Esteban+ 2009)
+ J/ApJ/695/580  : Oxygen abundance in M83 (Bresolin+, 2009)
+ J/AJ/136/2563  : HI Nearby Galaxy Survey, THINGS (Walter+, 2008)
+ J/ApJ/675/1213 : Abundances in M33 HII regions (Rosolowsky+, 2008)
+ J/AJ/133/2559  : Compact radio sources in spiral galaxies. II. (Maddox+, 2007)
+ J/A+A/441/981  : HII regions in 5 spiral galaxies (Bresolin+, 2005)
+ J/ApJ/617/240  : Oxygen abundances in the GOODS-North field (Kobulnicky+, 2004)
+ J/AJ/126/2867  : Red supergiants in Magellanic Clouds (Massey+, 2003)
+ J/ApJ/424/599  : Abundances in barred spiral galaxies (Martin+ 1994)
+
+Byte-by-byte Description of file: table2.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units   Label  Explanations
+--------------------------------------------------------------------------------
+   1- 19  A19   ---     HIIid  HII Region (NGC5194 +/-offsets in RA/DE) (1)
+  21- 22  I2    h       RAh    [13] Hour of Right Ascension (J2000)
+  24- 25  I2    min     RAm    [29/30] Minute of Right Ascension (J2000)
+  27- 30  F4.1  s       RAs    Second of Right Ascension (J2000)
+      32  A1    ---     DE-    [+] Sign of Declination (J2000)
+  33- 34  I2    deg     DEd    [47] Degree of Declination (J2000)
+  36- 37  I2    arcmin  DEm    [8/15] Arcminute of Declination (J2000)
+  39- 43  F5.2  arcsec  DEs    Arcsecond of Declination (J2000)
+  45- 50  F6.2  arcsec  Rgarc  Deprojected HII distance from galaxy center
+  52- 56  F5.3  ---     RgR25  Deprojected HII distance from galaxy center (2)
+  58- 61  F4.2  kpc     Rgkpc  Deprojected HII distance from galaxy center
+      63  I1    ---     dOIII  [0,1] 3{sigma} [OIII] 4363A detection
+      65  I1    ---     dNII   [0,1] 3{sigma} [NII] 5755A detection
+      67  I1    ---     dSIII  [0,1] 3{sigma} [SIII] 6312A detection
+      69  I1    ---     dOII   [0,1] 3{sigma} [OII] 7330A detection
+      71  I1    ---     dSII   [0,1] 3{sigma} [SII] 6717A/6731A detection
+      73  I1    ---     WR     [0,1] Detection of Wolf-Rayet features
+--------------------------------------------------------------------------------
+Note (1): Galaxy name and the offset in RA and DEC, in arcseconds, from the
+          central position 13:29:52.7+47:11:43 (J2000).
+          NGC5194+3.3+9.1 added by CDS to match regions observed in table 3
+          (see the Acknowledgement section below).
+Note (2): In units of the 25th mag isophotal radius; RC3 (de Vaucouleurs, 1991,
+          Cat. VII/155)
+--------------------------------------------------------------------------------
+
+Byte-by-byte Description of file: table3a.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units   Label     Explanations
+--------------------------------------------------------------------------------
+   1- 19  A19   ---     HIIid     HII Region (NGC5194 +/-offsets in RA/DE)
+  21- 30  A10   ---     Species   Species
+  32- 35  I4    0.1nm   lambda    [346/9546]? Species Wavelength in Angstroms
+      37  A1    ---   l_Flux      Upper limit flag on Flux
+  39- 49  F11.5 ---     Flux      [0/10485]? Line flux in units of H{beta}=1
+  51- 60  F10.5 ---   e_Flux      [0/11]? uncertainty in Flux
+--------------------------------------------------------------------------------
+
+Byte-by-byte Description of file: table3b.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units       Label  Explanations
+--------------------------------------------------------------------------------
+   1- 19  A19   ---         HIIid  HII Region (NGC5194 +/-offsets in RA/DE)
+  21- 25  F5.3  ---         CHb    [0.1/1.1] Extinction Correction for H{beta}
+                                   Flux C(H{beta})
+  27- 31  F5.3  ---       e_CHb    [0.01/0.03] CHb uncertainty
+  33- 39  F7.2  10+14W/m2   FHb    [26/2218] H{beta} Flux F(H{beta})
+                                    in units of 10-17ergs/s/cm^2
+  41- 44  F4.1  10+14W/m2 e_FHb    [0.7/11] FHb uncertainty
+  46- 54  F9.4  0.1nm       EWHb   [10.7/1677] H{beta} equivalent Width
+                                    in units of Angstroms
+  56- 65  F10.4 0.1nm       EWHa   [43.2/10485] H{alpha} equivalent Width
+                                    in units of Angstroms
+--------------------------------------------------------------------------------
+
+Byte-by-byte Description of file: table5.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units  Label       Explanations
+--------------------------------------------------------------------------------
+   1- 19  A19   ---    HIIid       HII Region (NGC5194 +/-offsets in RA/DE)
+  21- 25  I5    K      Te([OII])1  ? Measured Electron temperature in
+                                    the [OII] region
+  27- 30  I4    K    e_Te([OII])1  ? Uncertainty in Te([OII])1
+  32- 35  I4    K      Te([OIII])1 ? Measured Electron temperature in
+                                    the [OIII] region
+  37- 40  I4    K    e_Te([OIII])1 ? Uncertainty in Te([OIII])1
+  42- 45  I4    K      Te([NII])1  ? Measured Electron temperature in
+                                    the [NII] region
+  47- 50  I4    K    e_Te([NII])1  ? Uncertainty in Te([NII])1
+  52- 55  I4    K      Te([SIII])1 ? Measured Electron temperature in
+                                    the [SIII] region
+  57- 60  I4    K    e_Te([SIII])1 ? Uncertainty in Te([SIII])1
+  62- 64  I3    cm-3   Ne1         Measured Electron density (cm^{-3})
+  66- 67  I2    cm-3 e_Ne1         Uncertainty in Ne1
+  69- 72  I4    K      Te([OII])2  Adopted Electron temperature in
+                                    the [OII] region
+  74- 76  I3    K    e_Te([OII])2  Uncertainty in Te([OII])2
+  78- 81  I4    K      Te([OIII])2 Adopted Electron temperature in
+                                    the [OIII] region
+  83- 85  I3    K    e_Te([OIII])2 Uncertainty in Te([OIII])2
+  87- 90  I4    K      Te([NII])2  Adopted Electron temperature in
+                                    the [NII] region
+  92- 94  I3    K    e_Te([NII])2  Uncertainty in Te([NII])2
+  96- 99  I4    K      Te([SIII])2 Adopted Electron temperature in
+                                    the [SIII] region
+ 101-103  I3    K    e_Te([SIII])2 Uncertainty in Te([SIII])2
+ 105-107  I3    cm-3   Ne2         Adopted Electron density
+ 109-111  I3    cm-3 e_Ne2         Uncertainty in Ne2
+ 113-116  F4.1  10-5   O+/H+       Abundance ratio O+/H+
+ 118-121  F4.1  10-5 e_O+/H+       Uncertainty in O+/H+
+ 123-127  F5.2  10-5   O++/H+      Abundance ratio O++/H+
+ 129-132  F4.1  10-5 e_O++/H+      Uncertainty in O++/H+
+ 134-138  F5.3  [-]    logO/H      Oxygen abundance, 12+log(O/H)
+ 140-144  F5.3  [-]  e_logO/H      Uncertainty in O/H
+ 146-150  F5.1  10-6   N+/H+       Abundance ratio N+/H+
+ 152-155  F4.1  10-6 e_N+/H+       Uncertainty in N+/H+
+ 157-160  F4.2  ---    ICF(N)      Nitrogen ionization correction factor
+ 162-165  F4.2  ---  e_ICF(N)      Uncertainty in ICF(N)
+ 167-172  F6.3  [-]    log(N/O)    Nitrogen-to-oxygen abundance ratio, log(N/O)
+ 174-178  F5.3  [-]  e_log(N/O)    Uncertainty in O/H
+ 180-184  F5.3  [-]    log(N/H)    Nitrogen abundance, 12+log(N/H)
+ 186-190  F5.3  [-]  e_log(N/H)    Uncertainty in N/H
+ 192-195  F4.1  10-7   S+/H+       Abundance ratio S+/H+
+ 197-200  F4.1  10-7 e_S+/H+       Uncertainty in S+/H+
+ 202-206  F5.1  10-7   S++/H+      Abundance ratio S++/H+
+ 208-211  F4.1  10-7 e_S++/H+      Uncertainty in S++/H+
+ 213-217  F5.3  ---    ICF(S)      Sulfer ionization correction factor
+ 219-223  F5.3  ---  e_ICF(S)      Uncertainty in ICF(S)
+ 225-230  F6.3  [-]    log(S/O)    Sulfer-to-oxygen abundance ratio, log(S/O)
+ 232-236  F5.3  [-]  e_log(S/O)    Uncertainty in S/O
+ 238-242  F5.3  [-]    log(S/H)    Sulfer abundance, 12+log(S/H)
+ 244-248  F5.3  [-]  e_log(S/H)    Uncertainty in S/H
+ 250-256  F7.2  10-6   Ne++/H+     ? Abundance ratio Ne++/H+
+ 258-264  F7.2  10-6 e_Ne++/H+     ? Uncertainty in Ne++/H+
+ 266-269  F4.2  ---    ICF(Ne)     Neon ionization correction factor
+ 271-274  F4.2  ---  e_ICF(Ne)     Uncertainty in ICF(Ne)
+ 276-283  F8.3  [-]    log(Ne/O)   ? Neon-to-oxygen abundance ratio, log(Ne/O)
+ 285-292  F8.3  [-]  e_log(Ne/O)   ? Uncertainty in Ne/O
+ 294-300  F7.2  [-]    log(Ne/H)   ? Neon abundance, 12+log(Ne/H)
+ 302-308  F7.2  [-]  e_log(Ne/H)   ? Uncertainty in Ne/H
+ 310-314  F5.2  10-7   Ar++/H+     Abundance ratio Ar++/H+
+ 316-319  F4.2  10-7 e_Ar++/H+     Uncertainty in Ar++/H+
+ 321-324  F4.2  ---    ICF(Ar)     Argon ionization correction factor
+ 326-329  F4.2  ---  e_ICF(Ar)     Uncertainty in ICF(Ar)
+ 331-336  F6.3  [-]    log(Ar/O)   Argon-to-oxygen abundance ratio, log(Ar/O)
+ 338-342  F5.3  [-]  e_log(Ar/O)   Uncertainty in Ar/O
+ 344-348  F5.3  [-]    log(Ar/H)   Argon abundance, 12+log(Ar/H)
+ 350-354  F5.3  [-]  e_log(Ar/H)   Uncertainty in Ar/H
+--------------------------------------------------------------------------------
+
+History:
+    * 16-Jul-2015: electronic version of tables 2, 3 and 5 published by AAS.
+    * 18-Nov-2015: NGC5194+3.3+9.1 added in table 2.
+
+Acknowledgements:
+    Kevin V. Croxall [Ohio State University] for data of NGC5194+3.3+9.1 added
+     in table 2.
+
+References:
+    Berg et al.      I.    NGC628.   2015ApJ...806...16B   Cat. J/ApJ/806/16
+    Croxall et al.   II.   NGC5194.  2015ApJ...808...42C   This catalog
+    Croxall et al.   III.  NGC5457.  2016ApJ...830....4C   Cat. J/ApJ/830/4
+    Berg et al.      IV.   NGC3184.  2020ApJ...893...96B   Cat. J/ApJ/893/96
+    Skillman et al.  V.    M101.     2020ApJ...894..138S
+    Rogers et al.    VI.   NGC2403.  2021ApJ...915...21R   Cat. J/ApJ/915/21
+    Rogers et al.    VII.  M33.      2022ApJ...939...44R   Cat. J/ApJ/939/44
+    Berg et al.      VIII. M101.     2024ApJ...971...87B
+
+================================================================================
+(End)                 Prepared by [AAS], Emmanuelle Perret [CDS]    18-Nov-2015
